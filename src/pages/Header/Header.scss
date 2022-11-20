@@ -1,0 +1,37 @@
+.nav-wrapper{
+    margin-left: 70px;
+    margin-right: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-wrapper{
+    width: 206px;
+    height: 101.76px;
+    position: relative;
+    img{
+        position: absolute;
+        padding: 0 8.13%;
+
+        max-width: 100%;
+        min-height: 100%;
+    }
+}
+
+.desktop-menu{
+    display: flex;
+    gap: 94px;
+    align-items: center;
+    .active{
+        color: #FA4A0C;
+    }
+    a{
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+        font-weight: 700;
+        text-align: center;
+    }
+}

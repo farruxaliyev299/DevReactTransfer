@@ -1,0 +1,21 @@
+footer{
+    .footer-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 115px;
+    }
+    .footer-icons{
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+        img{
+            width: 32px;
+        }
+    }
+    .right{
+        p{
+            font-size: 12px;
+        }
+    }
+}

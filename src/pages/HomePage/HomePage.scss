@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.d-none{
+    display: none;
+}
+
+.container{
+    margin-left: 245px;
+    margin-right: 154px;
+}
+
+.row{
+    display: flex;
+}
+
+.col-lg-6{
+    width: 49%;
+    margin: 0 auto;
+}
+
+//Navbar section
+
+
+
+//Welcome section
+
+
+//How works section
+
+
+
+//Download app section
+
+
+
+//Footer
+
+
+@media screen and (min-width: 993px) {
+    #welcome{
+        .welcome-content{
+            width: 1005px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .desktop-menu{
+        display: none;
+    }
+
+    .left{
+        img{
+            min-width: 104px;
+        }
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    #welcome{
+        .welcome-border{
+            height: 700px;
+        }
+        .welcome-content{
+            left: 0;
+            transform: translate(0);
+            max-width: 1005px;
+            height: initial;
+        }
+
+        .welcome-wrapper{
+            &::after{
+                width: 100%;
+            }
+            #welcome-background{
+                display: none;
+            }
+            .text-content{
+                width: 98%;
+                margin: 0 auto;
+                p{
+                    color: #737373;
+                    font-size: 16px;
+                }
+                h4{
+                    color: #737373;
+                    font-size: 24px;
+                }
+                h1{
+                    color: #252B42;
+                    font-size: 36px;
+                }
+            }
+            .download-buttons{
+                flex-direction: column;
+                justify-content: flex-start !important;
+                .ios-button{
+                    border: 1px solid #FA4A0C !important;
+                    height: 68px;
+                    font-size: 24px;
+                    a{
+                        color: #FA4A0C !important;
+                    }
+                }
+                .ps-button{
+                    height: 68px;
+                    font-size: 24px;
+                }
+            }
+            .phones-background{
+                img{
+                    width: 55%;
+                }
+            }
+        }
+    }
+
+    .nav-wrapper{
+        margin-left: 25px;
+        margin-right: 23px;
+    }
+
+    //How works adaptiveness
+
+    .container{
+        margin: 0;
+        width: 98%;
+        margin: 0 auto;
+    }
+
+    .col-12{
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    #how-works{
+        .how-works-item{
+            flex-direction: column;
+            justify-content: flex-start;
+            .left{
+                display: flex;
+                justify-content: center;
+                order: 1;
+                .desktop-img{
+                    display: none;
+                }
+                .mobile-img{
+                    display: block;
+                }
+            }
+            .right{
+                justify-content: center;
+                .text-content{
+                    text-align: center;
+                }
+            }
+        }
+
+    }
+
+    //Download app adaptiveness
+    #download-app{
+        .download-wrapper{
+            background-color: #252B42;
+            img{
+                display: none;
+            }
+        }
+    }
+
+    //Footer adaptiveness
+    footer{
+        .footer-wrapper{
+            height: 125px;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 98%;
+            margin: 0 auto;
+        }
+        .left{
+            display: none;
+        }   
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #welcome{
+        .welcome-wrapper{
+            padding-bottom: 0;
+        }
+    }
+}
