@@ -65,7 +65,7 @@ a{
 
 @media screen and (max-width: 992px) {
     .desktop-menu{
-        display: none;
+        display: none !important; 
     }
 
     .left{
@@ -80,18 +80,18 @@ a{
 
     #welcome{
         .welcome-border{
-            height: 700px;
+            height: 700px !important;
         }
         .welcome-content{
-            left: 0;
-            transform: translate(0);
-            max-width: 1005px;
-            height: initial;
+            left: 0 !important;
+            transform: translate(0) !important;
+            max-width: 1005px !important;
+            height: initial !important;
         }
 
         .welcome-wrapper{
             &::after{
-                width: 100%;
+                width: 100% !important;
             }
             #welcome-background{
                 display: none;
@@ -137,8 +137,8 @@ a{
     }
 
     .nav-wrapper{
-        margin-left: 25px;
-        margin-right: 23px;
+        margin-left: 25px !important;
+        margin-right: 23px !important;
     }
 
     //How works adaptiveness
@@ -195,9 +195,9 @@ a{
         .footer-wrapper{
             height: 125px;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: space-evenly !important;
             width: 98%;
-            margin: 0 auto;
+            margin: 0 auto !important;
         }
         .left{
             display: none;

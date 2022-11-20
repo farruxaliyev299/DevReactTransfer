@@ -1,6 +1,7 @@
 import "../HomePage/HomePage.scss";
 import "./Header.scss";
 import logo from "../../assets/images/logo/BellaOlonjeLogo.svg";
+import hamburger from "../../assets/images/logo/hamburger.svg";
 import { NavLink } from "../../components/NavLink/NavLink";
 
 export const Header = () => {
@@ -18,7 +19,7 @@ export const Header = () => {
                     <NavLink href="#" isOrange={false} title="Faq"/>
                     <NavLink href="#" isOrange={false} title="Contact"/>
                 </nav>
-                <img src="./assets/images/logo/hamburger.svg" alt="hamburger icon" className="d-none hamburger"></img>
+                <img src={ hamburger } alt="hamburger icon" className="d-none hamburger"></img>
             </div>
         </div>
     );

@@ -1,4 +1,4 @@
-// import "./HomePage.scss"
+// import "./HomePage.scss";
 import { Header } from "../Header/Header";
 import { Welcome } from "../Welcome/Welcome";
 import { HowWorks } from "../HowWorks/HowWorks";
@@ -8,7 +8,7 @@ import { Footer } from "../Footer/Footer";
 export const HomePage = () => {
     return (
         <div>
-            <header className="App-header">
+            <header>
                 <Header />
             </header>
             <main>
