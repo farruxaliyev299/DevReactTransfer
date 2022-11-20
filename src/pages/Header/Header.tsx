@@ -1,6 +1,7 @@
 import "../HomePage/HomePage.scss";
 import "./Header.scss";
 import logo from "../../assets/images/logo/BellaOlonjeLogo.svg";
+import { NavLink } from "../../components/NavLink/NavLink";
 
 export const Header = () => {
     return (
@@ -12,10 +13,10 @@ export const Header = () => {
                     </div>
                 </div>
                 <nav className="right desktop-menu">
-                    <a href=" " className="nav-link active">Home</a>
-                    <a href=" " className="nav-link">Product</a>
-                    <a href=" " className="nav-link">Faq</a>
-                    <a href=" " className="nav-link">Contact</a>
+                    <NavLink href="#" isOrange={true} title="Home"/>
+                    <NavLink href="#" isOrange={false} title="Product"/>
+                    <NavLink href="#" isOrange={false} title="Faq"/>
+                    <NavLink href="#" isOrange={false} title="Contact"/>
                 </nav>
                 <img src="./assets/images/logo/hamburger.svg" alt="hamburger icon" className="d-none hamburger"></img>
             </div>
