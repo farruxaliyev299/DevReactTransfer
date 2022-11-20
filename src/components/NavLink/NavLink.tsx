@@ -7,6 +7,6 @@ interface NavLinkProps {
 export const NavLink = (props: NavLinkProps) => {
     let { href, title, isOrange } = props;
     return(
-        <a href={ href } className={isOrange ? "nav-link": "nav-link active"}>{title}</a>
+        <a href={ href } className={isOrange ? "nav-link active": "nav-link"}>{title}</a>
     );
 };
